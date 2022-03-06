@@ -21,23 +21,20 @@ const preguntas = [
             },
             {
                 value: '4',
-                name:`${'4.'.yellow} Listar Tareas Pendientes` 
+                name: `${'4.'.yellow} Listar Tareas Pendientes`
             },
             {
                 value: '5',
-                name:`${'5.'.yellow} Completar Tarea(s)` 
+                name: `${'5.'.yellow} Completar Tarea(s)`
             },
             {
                 value: '6',
-                name:`${'6.'.yellow} Borrar Tarea`
+                name: `${'6.'.yellow} Borrar Tarea`
             },
             {
                 value: '0',
                 name: `${'0.'.yellow} Salir`
             }
-
-
-
         ]
     }
 ]
@@ -81,14 +78,10 @@ const leerInput = async (message) => {
                 if (value.length === 0) {
                     return 'Por favor ingrese un valor'
                 }
-
                 return true;
-
             }
         }
     ];
-
-
 
     const { desc } = await inquirer.prompt(question)
     return desc;

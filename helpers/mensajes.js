@@ -28,7 +28,6 @@ const mostrarMenu = () => {
 
 
         readline.question('Seleciones una opción: ', (opt) => {
-
             resolve(opt)
             readline.close();
 
