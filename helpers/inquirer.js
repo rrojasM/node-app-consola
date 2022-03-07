@@ -127,22 +127,16 @@ const confirmar = async (message) => {
             type: 'confirm',
             name: 'ok',
             message
-
         }
     ]
-
     const { ok } = await inquirer.prompt(question);
-
     return ok;
-
 }
 
 
 const mostrarListadoCheklist = async (tareas = []) => {
 
-
     const choices = tareas.map((tarea, i) => {
-
         const idx = `${i + 1}.`.green;
         return {
             value: tarea.id,
@@ -150,8 +144,6 @@ const mostrarListadoCheklist = async (tareas = []) => {
             checked: (tarea.completadoEn) ? true : false
         }
     });
-
-
 
     const pregunta = [
         {
@@ -163,7 +155,6 @@ const mostrarListadoCheklist = async (tareas = []) => {
     ]
 
     const { ids } = await inquirer.prompt(pregunta);
-
     return ids;
 }
 

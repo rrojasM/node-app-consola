@@ -6,7 +6,6 @@ class Tarea {
     desc = '';
     completadoEn = null;
 
-
     constructor(desc){
         this.id = uudiv4();
         this.desc = desc;

@@ -92,7 +92,6 @@ class Tareas {
             if (!ids.includes(tarea.id)) {
                 /*  const tarea = this._listado[id];
                  tarea.completadoEn = null; */
-
                 this._listado[tarea.id].completadoEn = null;
             }
 
